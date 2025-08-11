@@ -14,5 +14,5 @@ This mini-repo reproduces a **polyglot** query on the TimeTravelDB (TTDB) resear
 - Replace the file in the cloned project in data-generator/graph_template.yaml with the one in this repository under "data/graph_template.yaml"
 - In TTQL, run GD then LD
 ## Query
-Run the following query : FROM 2023-01-01T01:00:00+01:00 TO 2023-01-01T01:00:00+01:00 MATCH (s:Station)-[:Trip]->(n:Station) WHERE ANY(n.ts_available_bikes) < 3 RETURN s;
+Run the following query : ```sql FROM 2023-01-01T01:00:00+01:00 TO 2023-01-01T01:00:00+01:00 MATCH (s:Station)-[:Trip]->(n:Station) WHERE ANY(n.ts_available_bikes) < 3 RETURN s;````
 
