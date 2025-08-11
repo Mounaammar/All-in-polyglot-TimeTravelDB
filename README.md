@@ -16,3 +16,6 @@ This mini-repo reproduces a **polyglot** query on the TimeTravelDB (TTDB) resear
 ## Query
 Run the following query : ```sql FROM 2023-01-01T01:00:00+01:00 TO 2023-01-01T01:00:00+01:00 MATCH (s:Station)-[:Trip]->(n:Station) WHERE ANY(n.ts_available_bikes) < 3 RETURN s;````
 
+``` sql
+SELECT * FROM EMP JOIN DEPT ON EMP.DEPTNO = DEPT.DEPTNO;
+```
